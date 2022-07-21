@@ -13,7 +13,12 @@ function() {
     const inputKm = document.querySelector ('input[name="km"]'); 
     let trainTicket = inputKm * 0.21;
 
-    if (inputAge < 18)
+    if (inputAge < 18) {
+        trainTicket = trainTicket - trainTicket * 0.2;
+    } else if (inputAge > 65) {
+        trainTicket = trainTicket - trainTicket * 0.4;
+    }
+    
     
     console.log(trainTicket)
 }
