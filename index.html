@@ -13,15 +13,15 @@
         <div>
 
             <input type="text" name="name" placeholder="Inserisci Nome" value="">
-            <input type="text" name="km" placeholder="Percorso in km" value="">
+            <input type="number" name="km" placeholder="Percorso in km" value="0" min="0">
             <select name="age">
                 <option value="">-Seleziona tipo biglietto-</option>
                 <option value="0.2">Minorenne</option>
-                <option value="">Standard</option>
+                <option value="0">Standard</option>
                 <option value="0.4">Over65</option>
             </select>
-            <input type="button" value="Genera">
-
+            <input type="submit" value="Genera">
+            <input type="button" value="Cancella">  
         </div>
 
     </main>
